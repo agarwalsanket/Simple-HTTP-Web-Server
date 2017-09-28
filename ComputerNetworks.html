@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function pdfOpener(form) {
+	var uri = form.File.value
+	var url = "http://localhost:8080/" +uri
+	 window.open(url);
+
+}
+</script>
+	<title>Computer Networks First Project</title>
+</head>
+<body style = "background-color: #ffe6e6">
+<h1 align = "center" style="color:blue; font-size: 300%; background-color: grey">
+	This is Computer Networks
+</h1>
+
+
+<form id = "form" align = "center" method="post" action="">
+File Name: <input type="text" name="File" ><br><br>
+
+<input type="submit" value="Submit" onclick="pdfOpener(this.form)">
+</form>
+
+
+</body>
+</html>
